@@ -1,0 +1,14 @@
+{
+  "name": "allankayan-card",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test src/*.test.ts",
+    "typecheck": "wrangler types && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}

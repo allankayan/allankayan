@@ -1,0 +1,5 @@
+__pycache__/
+node_modules/
+.wrangler/
+.dev.vars
+worker/worker-configuration.d.ts

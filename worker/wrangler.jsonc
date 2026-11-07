@@ -1,0 +1,14 @@
+{
+  "name": "allankayan-card",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-11",
+  // The four scenes are rendered by scripts/render.py and bundled as text.
+  "rules": [{ "type": "Text", "globs": ["**/*.svg"], "fallthrough": true }],
+  // Coordinates stay out of the public repo: wrangler secret put WEATHER_LAT / WEATHER_LON.
+  "secrets": { "required": ["WEATHER_LAT", "WEATHER_LON"] },
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "head_sampling_rate": 1 },
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  }
+}

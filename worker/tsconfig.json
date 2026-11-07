@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "lib": [
+      "es2022"
+    ],
+    "types": [],
+    "strict": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "worker-configuration.d.ts",
+    "src/index.ts",
+    "src/scene.ts",
+    "src/radar.ts",
+    "src/svg.d.ts"
+  ]
+}
